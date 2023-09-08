@@ -1,7 +1,7 @@
 {
-  "name": "obfuscate-email",
+  "name": "obfuscate-link-web-component",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Obfuscate links to confuse spam-crawlers",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -9,10 +9,10 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/obfuscate-email/obfuscate-email.esm.js",
+  "unpkg": "dist/obfuscate-web-component/obfuscate-link.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/ivoba/obfuscate-link-web-component.git"
   },
   "files": [
     "dist/",

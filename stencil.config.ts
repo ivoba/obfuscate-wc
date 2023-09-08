@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'obfuscate-email',
+  namespace: 'obfuscate-link',
   outputTargets: [
     {
       type: 'dist',

@@ -4,11 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
-
-    <script type="module" src="/build/obfuscate-email.esm.js"></script>
-    <script nomodule src="/build/obfuscate-email.js"></script>
+    <script type="module" src="/build/obfuscate-link.esm.js"></script>
+    <script nomodule src="/build/obfuscate-link.js"></script>
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <obfuscate-link id="obfuscate" email="aXZvQGxvY2FsLmRldg==">custom link</obfuscate-link>
+    <br />
+    <obfuscate-link id="obfuscate" email="aXZvQGxvY2FsLmRldg=="></obfuscate-link>
+    <br />
+    <obfuscate-link id="obfuscate" tel="aXZvQGxvY2FsLmRldg=="></obfuscate-link>
+    <br />
+    <obfuscate-link id="obfuscate" sms="aXZvQGxvY2FsLmRldg=="></obfuscate-link>
+    <br />
+    <obfuscate-link id="obfuscate" facetime="aXZvQGxvY2FsLmRldg=="></obfuscate-link>
+    <br />
+    <obfuscate-link id="obfuscate" href="aXZvQGxvY2FsLmRldg=="></obfuscate-link>
+    <br />
   </body>
+  <script>
+    function decoder(value) {
+      console.log('custom decoder');
+      return window.atob(value);
+    }
+    obfuscate.decoder = decoder;
+  </script>
 </html>

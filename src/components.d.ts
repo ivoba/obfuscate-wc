@@ -6,56 +6,46 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface ObfuscateLink {
+        "decoder": (value: string) => string;
+        "email": string;
+        "facetime": string;
+        "headers": Record<string, string>;
+        "href": string;
+        "sms": string;
+        "tel": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLObfuscateLinkElement extends Components.ObfuscateLink, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLObfuscateLinkElement: {
+        prototype: HTMLObfuscateLinkElement;
+        new (): HTMLObfuscateLinkElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "obfuscate-link": HTMLObfuscateLinkElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface ObfuscateLink {
+        "decoder"?: (value: string) => string;
+        "email"?: string;
+        "facetime"?: string;
+        "headers"?: Record<string, string>;
+        "href"?: string;
+        "sms"?: string;
+        "tel"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "obfuscate-link": ObfuscateLink;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "obfuscate-link": LocalJSX.ObfuscateLink & JSXBase.HTMLAttributes<HTMLObfuscateLinkElement>;
         }
     }
 }
