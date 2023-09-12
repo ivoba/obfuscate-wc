@@ -12,7 +12,7 @@
   "unpkg": "dist/obfuscate-web-component/obfuscate-link.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivoba/obfuscate-link-web-component.git"
+    "url": "https://github.com/ivoba/obfuscate-wc.git"
   },
   "files": [
     "dist/",
