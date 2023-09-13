@@ -43,25 +43,23 @@ Add your decoder like this:
 
 There are three strategies we recommend for using web components built with Stencil.
 
-The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/my-component@0.0.1/dist/my-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/obfuscate-link-web-component@0.0.1/dist/obfuscate-link/obfuscate-link.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 - Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/my-component/dist/my-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='node_modules/obfuscate-link-web-component/dist/obfuscate-link/obfuscate-link.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In an app
-- Run `npm install my-component --save`
-- Add an import to the npm packages `import my-component;`
+- Run `npm install obfuscate-link-web-component --save`
+- Add an import to the npm packages `import obfuscate-link-web-component;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ## Disclaimer  
-Obfuscation can still be decoded quite easily but still better than nothing. 
+Obfuscation can still be decoded by sophisticated bots quite easily but still better than nothing. 
 Using the web component itself is already blocking spammer that look for mailto links.
 
 ## Development
