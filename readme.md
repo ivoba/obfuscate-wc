@@ -55,7 +55,7 @@ There are three strategies we recommend for using web components built with Sten
 
 ### In an app
 - Run `npm install obfuscate-link-web-component --save`
-- Add an import to the npm packages `import obfuscate-link-web-component;`
+- Add an import to the npm packages `import 'obfuscate-link-web-component';`
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ## Disclaimer  
