@@ -1,18 +1,17 @@
 {
   "name": "obfuscate-link-web-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Obfuscate links to confuse spam-crawlers",
-  "main": "dist/components/obfuscate-link.js",
-  "module": "dist/components/obfuscate-link.js",
+  "main": "dist/components/index.js",
+  "module": "dist/components/index.js",
   "types": "dist/types/index.d.ts",
-  "unpkg": "dist/components/obfuscate-link.js",
+  "unpkg": "dist/components/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ivoba/obfuscate-wc.git"
   },
   "files": [
-    "dist/",
-    "loader/"
+    "dist/"
   ],
   "scripts": {
     "build": "stencil build --docs",
