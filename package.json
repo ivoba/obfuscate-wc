@@ -1,6 +1,6 @@
 {
   "name": "obfuscate-link-web-component",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Obfuscate links to confuse spam-crawlers",
   "main": "dist/components/index.js",
   "module": "dist/components/index.js",
