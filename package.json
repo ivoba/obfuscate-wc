@@ -1,11 +1,11 @@
 {
   "name": "obfuscate-link-web-component",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Obfuscate links to confuse spam-crawlers",
   "main": "dist/components/index.js",
   "module": "dist/components/index.js",
   "types": "dist/types/index.d.ts",
-  "unpkg": "dist/components/index.js",
+  "unpkg": "www/build/index.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ivoba/obfuscate-wc.git"

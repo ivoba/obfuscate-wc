@@ -45,17 +45,17 @@ There are three strategies we recommend for using web components built with Sten
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/obfuscate-link-web-component@0.0.1/dist/obfuscate-link/obfuscate-link.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/obfuscate-link-web-component@0.0.1/www/build/obfuscate-link.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 - Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/obfuscate-link-web-component/dist/obfuscate-link/obfuscate-link.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='node_modules/obfuscate-link-web-component/www/build/obfuscate-link.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In an app
 - Run `npm install obfuscate-link-web-component --save`
-- Add an import to the npm packages `import 'obfuscate-link-web-component';`
+- Add an import to the npm packages `import { ObfuscateLink } from 'obfuscate-link-web-component';customElements.define('obfuscate-link', ObfuscateLink);`
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ## Disclaimer  
@@ -91,3 +91,4 @@ I was migrating from react to plain HTML and JS, so i needed something that work
 I also enjoyed reading this posts:  
 https://antonvroemans.medium.com/expand-your-spam-mailing-list-with-cloudflares-poor-obfuscation-fdc3cc8f4ccd
 https://www.corewebvitals.io/pagespeed/say-goodbye-to-cloudflare-email-obfuscation
+https://derkuba.de/content/posts/1021/stencil-builds-for-using-component-lib/
