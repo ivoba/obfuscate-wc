@@ -11,7 +11,8 @@
     "url": "https://github.com/ivoba/obfuscate-wc.git"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "www/"
   ],
   "scripts": {
     "build": "stencil build --docs",
