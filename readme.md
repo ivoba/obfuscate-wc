@@ -45,7 +45,7 @@ There are three strategies we recommend for using web components built with Sten
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/obfuscate-link-web-component@0.0.1/www/build/obfuscate-link.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/obfuscate-link-web-component@0.0.7/www/build/obfuscate-link.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -57,6 +57,7 @@ There are three strategies we recommend for using web components built with Sten
 - Run `npm install obfuscate-link-web-component --save`
 - Add an import to the npm packages `import { ObfuscateLink } from 'obfuscate-link-web-component';customElements.define('obfuscate-link', ObfuscateLink);`
 - Then you can use the element anywhere in your template, JSX, html etc
+
 
 ## Disclaimer  
 Obfuscation can still be decoded by sophisticated bots quite easily but still better than nothing. 
